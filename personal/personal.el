@@ -17,3 +17,9 @@
 
 (setq web-mode-content-types-alist '(("jsx"  . "\\.js[x]?\\'")))
 (flycheck-add-mode 'javascript-eslint 'web-mode)
+
+(server-mode)
+(init-pageflow-monorepo-multi-terms)
+
+; (require 'magit)
+; (require 'git-commit)

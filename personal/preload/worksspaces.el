@@ -30,7 +30,7 @@
   (ensure-multi-term "*pageflow-scrolled package*" "$HOME/code/pageflow/entry_types/scrolled/package" ?N)
   (ensure-multi-term "*dedicated*" "$HOME/code/dedicated_pageflow" ?d)
   (ensure-multi-term "*hosted*" "$HOME/code/hosted_pageflow" ?h)
-  (ensure-multi-term "*server*" "$HOME/code/dedicated_pageflow" ?s))
+  (ensure-multi-term "*server*" "$HOME/code/hosted_pageflow" ?s))
 
 (defun init-pageflow-multi-terms ()
   (interactive)
