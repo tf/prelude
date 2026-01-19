@@ -7,13 +7,12 @@
  '(js-indent-level 2)
  '(nxml-attribute-indent 2)
  '(nxml-child-indent 2)
- '(package-selected-packages
-   (quote
-    (default-text-scale gptel gpastel dockerfile-mode typescript-mode prettier-js php-mode multi-term multi-vterm elixir-mode rspec-mode projectile-rails counsel swiper ivy yaml-mode web-mode tide scss-mode yari inf-ruby lsp-ui lsp-mode json-mode js2-mode rainbow-mode elisp-slime-nav rainbow-delimiters company helm-projectile exec-path-from-shell zop-to-char zenburn-theme which-key volatile-highlights undo-tree super-save smartrep smartparens operate-on-number nlinum move-text magit projectile imenu-anywhere hl-todo guru-mode gitignore-mode gitconfig-mode git-timemachine gist flycheck expand-region epl editorconfig easy-kill diff-hl discover-my-major crux anzu ag ace-window tabbar session pod-mode muttrc-mode mutt-alias markdown-mode initsplit htmlize graphviz-dot-mode folding eproject diminish csv-mode browse-kill-ring boxquote bm bar-cursor apache-mode)))
+ '(package-selected-packages nil)
+ '(package-vc-selected-packages '((majutsu :url "https://github.com/0WD0/majutsu")))
  '(rspec-spec-command "bin/rspec")
  '(rspec-use-bundler-when-possible nil)
  '(rspec-use-spring-when-possible nil)
- '(sp-override-key-bindings (quote (("C-<left>") ("C-<right>"))))
+ '(sp-override-key-bindings '(("C-<left>") ("C-<right>")))
  '(typescript-indent-level 2)
  '(web-mode-code-indent-offset 2)
  '(web-mode-markup-indent-offset 2))

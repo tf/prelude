@@ -23,3 +23,7 @@
 
 ; (require 'magit)
 ; (require 'git-commit)
+
+(use-package majutsu
+  :ensure t
+  :vc (:url "https://github.com/0WD0/majutsu"))
