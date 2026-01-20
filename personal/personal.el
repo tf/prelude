@@ -5,7 +5,8 @@
 (global-set-key (kbd "C-<backspace>") 'backward-kill-word)
 (global-set-key (kbd "C-c w") 'init-pageflow-workspace-multi-term)
 
-(add-to-list 'term-bind-key-alist '("<backtab>" . (lambda () (interactive) (term-send-raw-string "\e[Z"))))
+(with-eval-after-load 'multi-term
+  (add-to-list 'term-bind-key-alist '("<backtab>" . (lambda () (interactive) (term-send-raw-string "\e[Z")))))
 
 (add-hook 'vterm-mode-hook (lambda () (display-line-numbers-mode -1)))
 
