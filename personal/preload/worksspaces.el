@@ -102,3 +102,17 @@
             (default-directory workspace-dir))
         (vterm)
         (point-to-register register)))))
+
+(defun init-claude-vterm ()
+  (interactive)
+  (let* ((dir (expand-file-name default-directory))
+         (dirname (file-name-nondirectory (directory-file-name dir)))
+         (register (read-char "Register: "))
+         (buffer-name (format "*%s Claude*" dirname)))
+    (if (get-buffer buffer-name)
+        (with-current-buffer buffer-name
+          (point-to-register register))
+      (let ((vterm-buffer-name buffer-name)
+            (default-directory dir))
+        (vterm)
+        (point-to-register register)))))

@@ -4,6 +4,7 @@
 (global-set-key [remap kill-whole-line] 'kill-whole-line)
 (global-set-key (kbd "C-<backspace>") 'backward-kill-word)
 (global-set-key (kbd "C-c w") 'init-pageflow-workspace-multi-term)
+(global-set-key (kbd "C-c c") 'init-claude-vterm)
 
 (with-eval-after-load 'multi-term
   (add-to-list 'term-bind-key-alist '("<backtab>" . (lambda () (interactive) (term-send-raw-string "\e[Z")))))
